@@ -1,6 +1,6 @@
 <?php
 function StringSanitize (string $Value){
-    $Forbidden=array('#', '=', '\'', ';','\\','+','-');
+    $Forbidden=array('#', '=', '\'', ';','\\','+','-','[',']');
     $Result="";
     $Char=str_split($Value);
     for($i=0;$i<count($Char);$i++){
